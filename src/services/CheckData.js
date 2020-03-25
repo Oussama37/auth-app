@@ -1,0 +1,17 @@
+export function CheckData(type,userData){
+    let Url = 'http://localhost:8080/auth/';
+    
+        return new Promise((resolve,reject)=>{
+            fetch(Url+type,{
+                method:'POST',
+                body:JSON.stringify(userData)
+            })
+            .then((res)=>res.json())
+            .then((resjson)=>{
+                resolve(resjson);
+            })
+            .catch((error)=>{
+                reject(error);
+            })
+        });
+}
