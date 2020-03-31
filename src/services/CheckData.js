@@ -1,5 +1,5 @@
 export function CheckData(type,userData){
-    let Url = 'http://localhost:8080/auth/';
+    let Url = 'http://localhost:8080/user/';
     
         return new Promise((resolve,reject)=>{
             fetch(Url+type,{

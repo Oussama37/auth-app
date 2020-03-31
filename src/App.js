@@ -9,11 +9,7 @@ class App extends React.Component {
       isLoggin: true
     };
   }
-  
-  
-  
-
-  componentDidMount() {
+   componentDidMount() {
     //Add .right by default
     this.rightSide.classList.add("right");
   }
